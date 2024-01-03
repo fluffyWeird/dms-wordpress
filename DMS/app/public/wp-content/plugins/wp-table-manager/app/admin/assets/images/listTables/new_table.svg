@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="404.726" height="378.726" viewBox="0 0 404.726 378.726">
+  <g id="Group_332" data-name="Group 332" transform="translate(-664 -1242)">
+    <g id="Group_324" data-name="Group 324" transform="translate(-4 307)">
+      <g id="Rectangle_1131" data-name="Rectangle 1131" transform="translate(668 935)" fill="none" stroke="#0073ab" stroke-width="35">
+        <rect width="133" height="112" rx="10" stroke="none"/>
+        <rect x="17.5" y="17.5" width="98" height="77" rx="7.5" fill="none"/>
+      </g>
+      <g id="Rectangle_1134" data-name="Rectangle 1134" transform="translate(668 1068)" fill="none" stroke="#0073ab" stroke-width="35">
+        <rect width="133" height="122" rx="10" stroke="none"/>
+        <rect x="17.5" y="17.5" width="98" height="87" rx="7.5" fill="none"/>
+      </g>
+      <g id="Rectangle_1132" data-name="Rectangle 1132" transform="translate(821 935)" fill="none" stroke="#0073ab" stroke-width="35">
+        <rect width="132" height="112" rx="10" stroke="none"/>
+        <rect x="17.5" y="17.5" width="97" height="77" rx="7.5" fill="none"/>
+      </g>
+      <g id="Rectangle_1133" data-name="Rectangle 1133" transform="translate(821 1068)" fill="none" stroke="#0073ab" stroke-width="35">
+        <rect width="132" height="122" rx="10" stroke="none"/>
+        <rect x="17.5" y="17.5" width="97" height="87" rx="7.5" fill="none"/>
+      </g>
+    </g>
+    <path id="plus" d="M110.863,0A110.863,110.863,0,1,0,221.726,110.863,110.985,110.985,0,0,0,110.863,0Zm48.5,120.1H120.1v39.264a9.238,9.238,0,1,1-18.476,0V120.1H62.36a9.238,9.238,0,1,1,0-18.476h39.264V62.36a9.238,9.238,0,1,1,18.476,0v39.264h39.264a9.238,9.238,0,1,1,0,18.476Zm0,0" transform="translate(847 1399)" fill="#0073ab"/>
+  </g>
+</svg>

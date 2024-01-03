@@ -1,0 +1,137 @@
+.sprite {
+    background-image: url(../images/table-sprites.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite_border_all {
+    width: 22px;
+    height: 22px;
+    background-position: -155px 1px;
+}
+
+.sprite_border_bottom {
+    width: 22px;
+    height: 22px;
+    background-position: -77px 1px;
+}
+
+.sprite_border_fall {
+    width: 22px;
+    height: 22px;
+    background-position: -69px -5px;
+}
+
+.sprite_border_horizontal {
+    width: 22px;
+    height: 22px;
+    background-position: -77px -39px;
+}
+
+.sprite_border_inside {
+    width: 22px;
+    height: 22px;
+    background-position: 1px -39px;
+}
+
+.sprite_border_left {
+    width: 22px;
+    height: 22px;
+    background-position: -115px 1px;
+}
+
+.sprite_border_outline {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -39px;
+}
+
+.sprite_border_remove {
+    width: 22px;
+    height: 22px;
+    background-position: -155px -39px;
+}
+
+.sprite_border_right {
+    width: 22px;
+    height: 22px;
+    background-position: -38px 1px;
+}
+
+.sprite_border_top {
+    width: 22px;
+    height: 22px;
+    background-position: 1px 1px;
+}
+
+.sprite_border_up {
+    width: 22px;
+    height: 22px;
+    background-position: -69px -69px;
+}
+
+.sprite_border_vertical {
+    width: 22px;
+    height: 22px;
+    background-position: -116px -39px;
+}
+
+.sprite_text_align_center {
+    width: 22px;
+    height: 22px;
+    background-position: -38px -119px;
+}
+
+.sprite_text_align_justify {
+    width: 22px;
+    height: 22px;
+    background-position: -116px -119px;
+}
+
+.sprite_text_align_left {
+    width: 22px;
+    height: 22px;
+    background-position: 3px -119px;
+}
+
+.sprite_text_align_right {
+    width: 22px;
+    height: 22px;
+    background-position: -78px -119px;
+}
+
+.sprite_text_bold {
+    width: 22px;
+    height: 22px;
+    background-position: 1px -79px;
+}
+
+.sprite_text_italic {
+    width: 22px;
+    height: 22px;
+    background-position: -77px -79px;
+}
+
+.sprite_text_underline {
+    width: 22px;
+    height: 22px;
+    background-position: -38px -79px;
+}
+
+.sprite_vertical_align_bottom {
+    width: 22px;
+    height: 22px;
+    background-position: 2px -157px;
+}
+
+.sprite_vertical_align_middle {
+    width: 22px;
+    height: 22px;
+    background-position: -39px -157px;
+}
+
+.sprite_vertical_align_top {
+    width: 22px;
+    height: 22px;
+    background-position: -77px -157px;
+}

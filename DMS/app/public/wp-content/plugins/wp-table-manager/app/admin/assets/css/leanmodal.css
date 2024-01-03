@@ -1,0 +1,64 @@
+#lean_overlay {
+    position: fixed;
+    z-index:100101;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#wptmmodal {
+    width: 90%;
+    height: 0;
+    padding: 10px;
+    visibility: hidden;
+    z-index: 99999999 !important;
+    background: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+}
+
+#wptmmodal #wptm-close-modal {
+    top: -8px;
+    width: 20px;
+    padding-bottom: 0;
+    color: #eee;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+}
+#wptmmodal #wptm-close-modal:hover {
+    cursor: pointer;
+}
+/*classic edittor*/
+#wptmlaunch span {
+    vertical-align: middle;
+    position: relative;
+}
+#wptmlaunch span.dashicons:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -3px;
+    height: 100%;
+}
+
+.loadding:after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    background-image: url(../images/loadingfile.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    color: #ffffff;
+}

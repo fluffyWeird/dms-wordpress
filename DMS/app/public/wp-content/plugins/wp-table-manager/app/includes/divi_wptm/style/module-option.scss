@@ -1,0 +1,172 @@
+#et-boc {
+  .et-fb-option-container {
+    position: relative;
+  }
+  .wptm-table-block {
+    .editor-plain-text {
+      overflow: hidden;
+      overflow-wrap: break-word;
+      resize: none;
+      height: 32px;
+      background: #fff;
+      width: 100%;
+      line-height: 26px;
+      font-size: 16px;
+      box-shadow: 0 0 0 transparent;
+      border-radius: 4px;
+      border: 1px solid #7e8993;
+      color: #32373c;
+      padding: 2px 6px;
+    }
+  }
+
+  .et-fb-settings-options .wptm-modal-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 36px;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    background: #fff;
+    overflow: auto;
+    font-weight: 600;
+    box-shadow: 0 0 15px -5px #000;
+    ul {
+      list-style: none !important;
+      list-style-type: none !important;
+      margin: 0 !important;
+      padding: 0 5px !important;
+      li {
+        &.cat-lv-1 {
+          padding-left: 10px;
+        }
+        &.cat-lv-2 {
+          padding-left: 20px;
+        }
+        &.cat-lv-3 {
+          padding-left: 30px;
+        }
+        &.cat-lv-4 {
+          padding-left: 40px;
+        }
+        &.cat-lv-5 {
+          padding-left: 50px;
+        }
+        &.cat-lv-6 {
+          padding-left: 60px;
+        }
+        &.cat-lv-7 {
+          padding-left: 70px;
+        }
+
+        li {
+          padding-left: 10px;
+        }
+      }
+    }
+    .wptm-name-wrap {
+      padding: 5px 0 5px 10px;
+      &:hover {
+        background: rgba(34, 145, 240, 0.1);
+        color: #2291f0;
+        cursor: pointer;
+      }
+      svg {
+        vertical-align: top;
+        margin-right: 7px;
+      }
+      &.wptm-table-name-wrap {
+        i {
+          vertical-align: sub;
+        }
+
+        svg {
+          width: 17px;
+        }
+      }
+    }
+  }
+
+  .wptm-input-module, .wptm-input-module-chart {
+    .wptm-selected-category-name {
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 10px 0 5px;
+      span {
+        font-size: 14px;
+        font-style: italic;
+      }
+    }
+
+    .wptm-edit-category {
+      margin-top: 10px;
+      a, a:active {
+        font-size: 12px;
+        background: #4c5866 !important;
+        border: 0;
+        border-radius: 3px;
+        box-shadow: none;
+        color: #fff !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #wptm-table-placeholder {
+    background: url(../includes/images/wptm_placeholder_table.svg) no-repeat scroll center center #fafafa;
+    height: 200px;
+    border-radius: 2px;
+    width: 100%;
+    background-size: auto 170px;
+    background-position-y: 0;
+  }
+
+  #wptm-chart-placeholder {
+    background: url(../includes/images/wptm_placeholder_chart.svg) no-repeat scroll center center #fafafa;
+    height: 200px;
+    border-radius: 2px;
+    width: 100%;
+    background-size: auto 170px;
+    background-position-y: 0;
+  }
+
+  .wptm_table:before {
+    content: "" !important;
+    background-image: url(../includes/images/wptm_placeholder_table_1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 16px;
+  }
+
+  .wptm_chart:before {
+    content: "" !important;
+    background-image: url(../includes/images/wptm_placeholder_chart_1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 16px;
+  }
+
+  svg.db-table {
+    height: 18px;
+  }
+
+  .wptm-loading {
+    width: 100%;
+    height: 140px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "require": {
+    "wikimedia/less.php": "^4.1",
+    "cerdic/css-tidy": "^2.0",
+    "greenlion/php-sql-parser": "^4.6",
+    "phpoffice/phpspreadsheet": "1.25.2",
+    "maennchen/zipstream-php": "2.2.6",
+    "psr/simple-cache": "1.0.1"
+  }
+}

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form class="wptmparams" method="POST" action="admin.php?page=wptm-config&amp;task=config.saveconfig">
+
+    <input
+            name="enable_import_excel"
+            type="checkbox"
+            label="Enable import/export Excel"
+            value="1"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="export_excel_format"
+            type="select"
+            label="Export file format"
+            tooltip="Select the Excel format when running an export of the table"
+            value="xlsx"
+            class="ju-select wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <option value="xls">Excel 2003</option>
+        <option value="xlsx">Excel 2007</option>
+    </input>
+
+    <input
+            name="sync_periodicity"
+            type="select"
+            label="Synchronization delay"
+            value="0"
+            tooltip="Define the delay for the automatic sheet synchronization between WP Table Manager and Excel, OneDrive or Google Sheets"
+            class="ju-select wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <option value="0">No</option>
+        <option value="0.083">5 minutes</option>
+        <option value="0.25">15 minutes</option>
+        <option value="0.5">30 minutes</option>
+        <option value="1">1 hour</option>
+        <option value="6">6 hours</option>
+        <option value="12">12 hours</option>
+        <option value="24">24 hours</option>
+        <option value="48">48 hours</option>
+    </input>
+
+    <input
+            name="enable_autosave"
+            type="checkbox"
+            label="Table auto save"
+            tooltip="Enable the table auto saving during edition. If you're experiening performance issue, you may disable it"
+            value="1"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+
+    <input
+            name="wptm_sync_method"
+            type="radio"
+            label="Sync Method"
+            value="ajax"
+            class="ju-input wptm_input radio"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <option for="ajax" value="ajax">Use Ajax</option>
+        <option for="cron" value="cron">Crontab url</option>
+    </input>
+
+    <input
+            name="open_table"
+            type="checkbox"
+            label="Edit table in a new tab"
+            tooltip="Open the table in a new tab if it is enabled"
+            value="1"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+
+    <input
+            name="enable_frontend"
+            type="checkbox"
+            label="Load the plugin on frontend"
+            tooltip="Load WP Table Manager required files to edit tables on frontend (from a text editor for example). If this feature is not required, keep it disabled to save server resources"
+            value="0"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+
+    <input class="input-block-level" name="last_sync" value="" type="text" hidden="true" />
+
+    <input
+            name="alternate_color"
+            type="config"
+            label="Alternate color sets"
+            tooltip="Alternate colors sets available to style your data"
+            value=""
+            class="inputbox input-block-level wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="hightlight"
+            type="config"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <input
+                name="enable_hightlight"
+                type="checkbox"
+                label="Cell highlightning"
+                tooltip="Activate a color on cell mouse over to see on a first sight a cell content"
+                value="0"
+                class="switch-button wptm_input"
+                required="true"
+                namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+        />
+        <input
+                name="tree_hightlight_color"
+                type="text"
+                label="Highlight background color"
+                value="#76bc58"
+                class="inputbox wp-color-field wptm_input"
+                namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+        />
+        <input
+                name="tree_hightlight_font_color"
+                type="text"
+                label="Highlight font color"
+                value="#ffffff"
+                class="inputbox wp-color-field wptm_input"
+                namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+        />
+        <input
+                class="ju-input wptm_input"
+                namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+                name="hightlight_opacity"
+                type="text"
+                label="Highlightning opacity "
+                value="0.9"
+        />
+    </input>
+
+    <input
+            name="automatically_calculation"
+            type="checkbox"
+            label="Import formula result in Excel"
+            tooltip="Automatically get formula results when importing or synchronizing Excel file"
+            value="1"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="uninstall_delete_files"
+            type="checkbox"
+            label="Delete all files on uninstall"
+            tooltip="Caution! If set to Yes, on plugin uninstall all the data will be removed"
+            value="0"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="openHyperlink"
+            type="checkbox"
+            label="Open hyperlink in new tab"
+            tooltip="Open hyperlink in new tab"
+            value="1"
+            class="switch-button wptm_input"
+            required="true"
+            namespace="Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+
+    <input
+            name="currency_sym"
+            type="text"
+            label="Currency symbol(s)"
+            value="$"
+            class="ju-input wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="symbol_position"
+            type="select"
+            label="Symbol position"
+            value="0"
+            class="ju-select wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <option value="0">Before</option>
+        <option value="1">After</option>
+    </input>
+    <input
+            name="decimal_sym"
+            type="select"
+            label="Decimal symbol"
+            value="."
+            class="ju-select wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+            tooltip="Select ',' you will customize the Decimal symbol to ',' (eg 1,234,5)"
+    >
+        <option value=".">.</option>
+        <option value=",">,</option>
+    </input>
+    <input
+            name="decimal_count"
+            type="text"
+            type_input="number"
+            min="0"
+            step="1"
+            label="Decimal count"
+            value="0"
+            class="ju-input wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="thousand_sym"
+            type="select"
+            label="Thousand symbol"
+            value=","
+            class="ju-select wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    >
+        <option value=".">.</option>
+        <option value=",">,</option>
+        <option value=" "> &#160;&#160;&#160;(space)</option>
+    </input>
+    <input
+            name="date_formats"
+            type="text"
+            label="Date formats "
+            link="https://wordpress.org/support/article/formatting-date-and-time/"
+            value="Y-m-d"
+            class="ju-input date_formats wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="my_fonts"
+            type="config"
+            label="Local fonts"
+            tooltip="Add new and remove fonts. Then you can use them in specific tables"
+            value=""
+            class="inputbox input-block-level wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <input
+            name="fonts_google"
+            type="config"
+            label="Google fonts"
+            tooltip="Select fonts to text style in you tables from google, then you can use them in specific tables"
+            value=""
+            class="inputbox input-block-level wptm_input"
+            namespace="\Joomunited\WP_Table_Manager\Admin\Fields\"
+    />
+    <button
+            type="submit"
+            value="Save settings"
+            class="ju-button orange-button submit_form"
+    />
+</form>

@@ -1,0 +1,274 @@
+@charset "UTF-8";
+.edit-post-visual-editor .wptm-category-block ul {
+    list-style: none !important;
+    padding: 0;
+    margin-left: 1.3em;
+}
+
+.wptm-category-block ul li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wptm-category-block .wptm-category-search {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 20px 14px 14px;
+    background-color: #f8f9f9;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wptm-category-block .wptm-category-search label {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    white-space: nowrap;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.wptm-category-block .wptm-category-search label .dashicon {
+    margin-right: 8px;
+}
+
+.wptm-category-block .wptm-category-search textarea, .wptm-category-block .wptm-category-search input {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    height: 35px;
+    background: #fff;
+    line-height: 30px;
+    width: 100%;
+}
+
+.wptm-category-block .categories-dropdown {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    background: #fff;
+    z-index: 999;
+    overflow: auto;
+    font-weight: 600;
+    box-shadow: 0 0 15px -5px #000;
+}
+
+.wptm-category-block .categories-dropdown li:hover {
+    cursor: pointer;
+}
+
+.wptm-category-block .categories-dropdown .wptm-table .wptm-table-icon,
+.wptm-category-block .categories-dropdown .wptm-chart .wptm-chart-icon {
+    height: 22px;
+    vertical-align: middle;
+}
+
+.wptm-modal {
+    width: unset;
+}
+
+.wptm-modal-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+}
+
+.wptm-modal-content .wptm-modal-left-panel, .wptm-modal-content .wptm-modal-right-panel {
+    flex: 1;
+}
+
+.wptm-modal-content .wptm-modal-left-panel {
+    order: 1;
+    flex-basis: 330px;
+    max-width: 330px;
+}
+
+.wptm-modal-content .wptm-modal-left-panel .categories-dropdown {
+    overflow-y: auto;
+}
+
+.wptm-modal-content .wptm-modal-left-panel .categories-dropdown ul {
+    margin: 0;
+}
+
+.wptm-modal-content .wptm-modal-left-panel .categories-dropdown ul li {
+    cursor: pointer;
+}
+
+.wptm-modal-content .wptm-modal-right-panel {
+    order: 2;
+    flex-basis: calc(100% - 340px);
+    padding: 25px;
+    background: #f3f6fa;
+    position: relative;
+}
+
+.wptm-category {
+    color: #404852;
+    padding: 5px 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.wptm-table:hover, .wptm-table.active,
+.wptm-chart:hover, .wptm-chart.active {
+    background: rgba(34, 145, 240, 0.1);
+    color: #2291f0;
+}
+
+.wptm-table:hover .dashicon, .wptm-table.active .dashicon,
+.wptm-chart:hover .dashicon, .wptm-chart.active .dashicon {
+    fill: #2291f0;
+}
+
+.wptm-category .wptm-category-name-wrap, .wptm-category .wptm-table-name-wrap {
+    display: flex;
+    align-items: center;
+}
+.wptm-category .wptm-table-name-wrap svg {
+    fill: #404852;
+    width: 24px;
+    height: auto;
+    padding: 2px;
+}
+.wptm-category .wptm-category-name, .wptm-category .wptm-table-name {
+    padding-left: 5px;
+}
+
+.wptm-table .wptm-table-name, .wptm-chart .wptm-chart-name {
+    cursor: pointer;
+    vertical-align: sub;
+    padding-left: 5px;
+}
+
+.wptm-category .wptm-toggle-expand {
+    display: flex;
+    align-items: center;
+}
+
+.wptm-category .wptm-toggle-expand:after {
+    content: "";
+    font-family: "dashicons";
+}
+
+.wptm-category.collapsed .wptm-toggle-expand:after {
+    content: "";
+    font-family: "dashicons";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.wptm-category .dashicon {
+    vertical-align: middle;
+    width: 20px;
+    fill: #888888;
+}
+
+.wptm-nothing-found {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: #6d6d6d;
+}
+
+.wptm-loading-wrapper {
+    display: grid;
+    align-items: center;
+}
+
+.wptm-loading-wrapper .wptm-loading {
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+}
+
+/* Animation */
+.wptm-animation-enter {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.wptm-animation-enter.wptm-animation-enter-active {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.wptm-selected-category-name {
+    background: #f8f9f9;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 20px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wptm-selected-category-name span {
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_paginate {
+    float: right !important;
+    position: relative;
+}
+.dataTables_wrapper .dataTables_length:after, .dataTables_wrapper .dataTables_paginate:after {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.wptm-block-table-message {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    max-width: 50%;
+    left: 25%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    text-shadow: 4px 2px 10px #9f9f9f;
+    display: none;
+}
+
+.wptm-category-block:hover .wptm-block-table-message {
+    display: block;
+}
+
+@media (min-width: 1366px) and (max-width: 1599px) {
+    .wptm-modal-content .wptm-modal-left-panel {
+        flex-basis: 200px;
+        max-width: 200px;
+    }
+
+    .wptm-modal-content .wptm-modal-right-panel {
+        flex-basis: calc(100% - 210px);
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .wptm-modal-content .wptm-modal-left-panel {
+        flex-basis: 200px;
+        max-width: 200px;
+    }
+
+    .wptm-modal-content .wptm-modal-right-panel {
+        flex-basis: calc(100% - 210px);
+    }
+}
+
+/*# sourceMappingURL=wptm-blocks.css.map */

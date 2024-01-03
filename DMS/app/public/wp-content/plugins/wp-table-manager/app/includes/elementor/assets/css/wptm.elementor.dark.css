@@ -1,0 +1,115 @@
+#elementor-panel-content-wrapper i.wp-table-manager-table {
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../images/wptm-elementor-table-dark.svg);
+  background-position: top left 10%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+}
+#elementor-panel-content-wrapper i.wp-table-manager-table:before {
+  content: none;
+}
+#elementor-panel-content-wrapper i.wp-table-manager-chart {
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../images/wptm-elementor-chart-dark.svg);
+  background-position: top left 10%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+}
+#elementor-panel-content-wrapper i.wp-table-manager-chart:before {
+  content: none;
+}
+#elementor-panel-content-wrapper .elementor-element:hover i.wp-table-manager-table {
+  background-image: url(../images/wptm-elementor-table-hover-dark.svg);
+}
+#elementor-panel-content-wrapper .elementor-element:hover i.wp-table-manager-chart {
+  background-image: url(../images/wptm-elementor-chart-hover-dark.svg);
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html {
+  max-width: 400px;
+  width: 52%;
+  margin-left: auto;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html .button.elementor_edit, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html .button.elementor_edit {
+  font-size: 12px;
+  color: #E0E1E3;
+  border: 1px solid #64666A;
+  background: #34383C;
+  vertical-align: top;
+  padding: 2px 5px;
+  float: right;
+  border-radius: 3px;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html .button.elementor_edit .dashicons, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html .button.elementor_edit .dashicons {
+  background-image: url(../images/wptm-elementor-table-dark.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
+  margin-right: 1px;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html .button.elementor_edit .dashicons:before, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html .button.elementor_edit .dashicons:before {
+  content: none;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html .button.elementor_edit.wptmReLaunch, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html .button.elementor_edit.wptmReLaunch {
+  width: 25px;
+  height: 25px;
+  background-color: #34383C;
+  text-align: center;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_table .elementor-control-raw-html .button.elementor_edit i, #elementor-panel-content-wrapper .elementor-control-wptm_table_old .elementor-control-raw-html .button.elementor_edit i {
+  vertical-align: sub;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_chart .wptm-chart-controls {
+  max-width: 400px;
+  width: 52%;
+  margin-left: auto;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_chart .wptm-chart-controls .button.wptmlaunch.elementor_edit {
+  font-size: 12px;
+  color: #E0E1E3;
+  border: 1px solid #64666A;
+  background: #34383C;
+  vertical-align: top;
+  padding: 2px 5px;
+  float: right;
+  border-radius: 3px;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_chart .wptm-chart-controls .button.wptmlaunch.elementor_edit span.dashicons {
+  background-image: url(../images/wptm-elementor-chart-dark.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 80%;
+  margin-right: 1px;
+  background-position-y: 1px;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_chart .wptm-chart-controls .button.wptmlaunch.elementor_edit span.dashicons:before {
+  content: none;
+}
+#elementor-panel-content-wrapper .elementor-control-wptm_chart .wptm-chart-controls .button.wptmlaunch.elementor_edit span:nth-child(2):before {
+  content: unset;
+}
+
+/*# sourceMappingURL=wptm.elementor.dark.css.map */
